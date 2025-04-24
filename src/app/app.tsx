@@ -20,9 +20,9 @@ export default function App() {
     
     useEffect(() => {
       if (!data) {
-        setTimeout(() => fetch('/data.json')
+        fetch('/data.json')
           .then(res => res.json())
-          .then(data => setData(data)), 5000)
+          .then(data => setData(data))
       }
     }, [data, designs])
 
