@@ -1,5 +1,8 @@
+'use client'
+
+import 'client-only';
+import App from './app';
+
 export default function Home() {
-  return (
-    <div>hola</div>
-  );
+  return <App />;
 }

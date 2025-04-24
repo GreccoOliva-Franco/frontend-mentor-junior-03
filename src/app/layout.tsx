@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import "./globals.css";
+import { Rubik } from "next/font/google";
 import { cn } from "@/lib/utils";
+import "./globals.css";
 
-const font = Roboto()
+const font = Rubik({
+  subsets: ['latin'],
+  weight: 'variable'
+});
 
 export const metadata: Metadata = {
-  title: "hola",
+  title: "Frontend Mentor | Time tracking dashboard",
 };
 
 export default function RootLayout({
@@ -18,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          'antialiased',
+          'antialiased min-h-screen bg-Navy-950',
           font.className
         )}
       >

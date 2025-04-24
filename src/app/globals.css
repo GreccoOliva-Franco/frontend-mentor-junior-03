@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
 @theme inline {
-  
+  --color-Purple-600:: hsl(246, 80%, 60%);
+  --color-Orange-300: hsl(15, 100%, 70%); /* (work)      */
+  --color-Blue-300: hsl(195, 74%, 62%);   /* (play)      */
+  --color-Pink-400: hsl(348, 100%, 68%);  /* (study)     */
+  --color-Green-400: hsl(145, 58%, 55%);  /* (exercise)  */
+  --color-Purple-700: hsl(264, 64%, 52%); /* (social)    */
+  --color-Yellow-300: hsl(43, 84%, 65%);  /* (self care) */
+
+  --color-Navy-950: hsl(226, 43%, 10%);
+  --color-Navy-900: hsl(235, 46%, 20%);
+  --color-Purple-500: hsl(235, 45%, 61%);
+  --color-Navy-200: hsl(236, 100%, 87%);
 }
